@@ -16,7 +16,7 @@ import dev.langchain4j.service.spring.AiServiceWiringMode;
         chatModel = "qwenChatModel",
         chatMemoryProvider = "chatMemoryProviderXiaoxia",
         tools = "appointmentTools",
-        contentRetriever = "contentRetrieverXiaoxia" // 配置一下 从那里拿到这个向量存储
+        contentRetriever = "contentRetrieverXiaoxiaPinecone" // 配置一下 从那里拿到这个向量存储
 )
 public interface XiaoxiaAgent {
 
