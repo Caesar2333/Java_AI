@@ -2,6 +2,7 @@ import com.caesar.XiaoxiaApp;
 import com.caesar.assistant.TestAssistant;
 import dev.langchain4j.community.model.dashscope.QwenChatModel;
 
+import dev.langchain4j.community.model.dashscope.QwenStreamingChatModel;
 import dev.langchain4j.service.AiServices;
 import dev.langchain4j.service.spring.AiService;
 import org.junit.jupiter.api.Test;
@@ -21,6 +22,9 @@ public class AiServiceTest {
 
     @Autowired
     TestAssistant testAssistant;
+
+    @Autowired
+    QwenStreamingChatModel qwenStreamingChatModel;
 
     @Test
     public void testAiService()

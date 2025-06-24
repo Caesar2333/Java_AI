@@ -6,7 +6,7 @@
 ------
 
 > ✅ 而 `langchain4j-reactor` 这个模块的作用，就是把原本的“事件流回调风格”包装成 **Reactor 的响应式流（Flux）结构**，
->  从而让你能用 `.map()` / `.filter()` / `.retry()` 等标准流式操作符处理模型输出。
+> 从而让你能用 `.map()` / `.filter()` / `.retry()` 等标准流式操作符处理模型输出。
 
 ------
 
@@ -24,7 +24,9 @@
 | **Lettuce**     | `RedisAsyncCommands`（Future）       | `RedisReactiveCommands`（Flux） |
 | **LangChain4j** | `StreamingChatLanguageModel`（回调） | `langchain4j-reactor`（Flux）   |
 
+* #### 换句话说，可以将之前的异步操作的响应，封装成为更好使用的webflux，其可以支持很多丰富的链式操作，去处理模型的输出。
 
+* #### 之前框架自带的异步相应回调不太好用。
 
 所以你问的这句：
 

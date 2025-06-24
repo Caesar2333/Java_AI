@@ -103,11 +103,16 @@
         </dependency>
 
 
-        <!--流式输出-->
+        <!--流式输出 这个webflux 是更好的异步结果处理的支持框架，需要配合异步操作的核心使用
+        WebFlux 是为了接管异步流程而设计的反应式框架，本身不生成异步，只负责“感知和编排”异步。
+        接受处理 flux和Mono
+        -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
+
+        <!--将其中的异步结果 给封装成为  flux或者是mono-->
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-reactor</artifactId>

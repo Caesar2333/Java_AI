@@ -19,6 +19,6 @@ public class ChatForm {
 
     private int memoryId;
 
-    private String content;
+    private String message;
 
 }
